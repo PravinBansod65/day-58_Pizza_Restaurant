@@ -25,7 +25,7 @@ header{
     padding: 10px;
     align-items: baseline;
     padding-inline: 30px;
-    border: 1px solid darkblue;
+    /* border: 1px solid darkblue; */
     position: sticky;
     top: 0;
 
