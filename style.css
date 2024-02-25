@@ -5,7 +5,7 @@
 /* Inter font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
   color: white;
   /* overflow-x: hidden; */
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 body {
@@ -23,8 +23,8 @@ body {
   margin-inline: auto;
 }
 .logo img {
-  width: 130px;
-  height: 40px;
+  width: 180px;
+  height: 65px;
   object-fit: scale-down;
   margin-left: -30px;
 }
@@ -61,6 +61,19 @@ a {
   text-transform: uppercase;
 }
 
+ul li a:hover ,i:hover{
+    transition: all 0.2s ease-in;
+    color:#f24c4c;
+}
+.socialmedia a i{
+    font-size: 2.4vw;
+}
+li:active , i:active{
+    transform: scale(0.9);
+}
+
+
+
 .logo h5 {
   font-size: 2vw;
   font-weight: 500;
@@ -68,7 +81,7 @@ a {
 }
 
 .hero {
-  background: url(./images/hero_pizza.png);
+  background: url(./images/bghero.jpg);
   width: 100%;
   height: 87vh;
   background-position: center;
@@ -87,7 +100,7 @@ a {
   flex-direction: column;
 }
 .content h1 {
-  font-size: 4vw;
+  font-size: 5.5vw;
   font-weight: 600;
 
   /* font-family: Inter, sans-serif; */
@@ -100,9 +113,14 @@ a {
 }
 
 .hero p {
-  font-size: 15px;
+  font-size: 2vw;
+  font-family: cursive;
 }
 
+.lorem p{
+  font-size: 1.3vw;
+  font-family: monospace;
+}
 .about_us {
   /* text-align: center; */
   overflow-x: hidden;
@@ -166,6 +184,7 @@ a {
   margin: 40px 2vw;
   font-weight: 300;
   font-size: 1.3vw;
+  font-family: Poppins, sans-serif;
 }
 .card div {
   display: flex;
@@ -178,7 +197,11 @@ a {
   margin: 0 auto;
 }
 .card img {
-  width: 50%;
+  /* width: %; */
+ width: 231px;
+ height: 140px;
+ border-radius: 10px;
+ overflow: hidden;
 }
 
 .menu_card {
@@ -388,6 +411,8 @@ footer img {
   }
   .lorem p {
     font-size: 2vw;
+    
+    /* line-height: 202px; */
   }
   .lorem hr {
     width: 20vw;
@@ -433,6 +458,9 @@ footer img {
 }
 
 @media (max-width: 500px) {
+    .socialmedia a i{
+        font-size: 4vw;
+    }
     footer{
         gap:60px;
     }
@@ -441,6 +469,10 @@ footer img {
     /* flex-direction: row; */
     height: 70vh;
     object-fit: cover;
+  }
+
+  .logo img{
+    height: 50px;
   }
   .about_us_h1 {
     margin: 80px 0;
@@ -470,4 +502,8 @@ footer img {
   .about_us_grid {
     width: 100%;
   }
+}
+
+.cheese_img_size{
+  width: 330px !important;
 }
