@@ -355,10 +355,11 @@ i:active {
   opacity: 0.9 !important;
 }
 .leftlorem {
+  letter-spacing: 1px;
   opacity: 0.9 !important;
   margin-bottom: 20px;
   font-size: 15px;
-  line-height: 17px;
+  line-height: 19px;
   font-family: monospace;
   font-weight: 500;
 }
